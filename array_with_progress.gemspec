@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["t.dabrowski@rock-hard.eu"]
 
   spec.summary       = 'Easily visualize progress of any Ruby task. A drop in replacement for Array.each.'
-  spec.description   = "Output uses different colors for successes/failured, allowing to easily check status of every task. Every line is trimmed/padded to match the terminal width. There is also a possiblity to change item name during processing. Transactions for ActiveRecord are also handled if required."
+  spec.description   = "Easily visualize progress of any Ruby task. A drop in replacement for Array.each. Output uses different colors for successes/failured, allowing to easily check status of every task. Every line is trimmed/padded to match the terminal width. There is also a possiblity to change item name during processing. Transactions for ActiveRecord are also handled if required."
   spec.homepage      = "https://github.com/dabroz/array_with_progress"
   spec.license       = "MIT"
 
