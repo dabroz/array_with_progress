@@ -1,6 +1,6 @@
 # ArrayWithProgress
 
-[![Build Status](https://travis-ci.org/dabroz/array_with_progress.svg?branch=master)](https://travis-ci.org/dabroz/array_with_progress)
+[![Build Status](https://travis-ci.org/dabroz/array_with_progress.svg?branch=master)](https://travis-ci.org/dabroz/array_with_progress) [![Coverage Status](https://coveralls.io/repos/dabroz/array_with_progress/badge.svg)](https://coveralls.io/r/dabroz/array_with_progress) [![Gem Version](https://badge.fury.io/rb/array_with_progress.svg)](http://badge.fury.io/rb/array_with_progress)
 
 Easily visualize progress of any Ruby task. A drop in replacement for `Array.each`.
 
