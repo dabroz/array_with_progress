@@ -14,7 +14,7 @@ class Example
       if rand(100) > 20
         id = 'abcdefghijklmnopqrstuvwxyz0123456789'.split(//).sample(16).join
         example.data = "http://example.server/user_details/#{example.name.downcase.gsub(' ', '_')}/#{id}.json"
-        example.status = %i{ok ok ok ok ok ok ok ok warning warning error}.sample
+        example.status = %w{ok ok ok ok ok ok ok ok warning warning error}.sample.to_sym
       end
       example
     end
