@@ -2,7 +2,7 @@ require 'highline/system_extensions'
 
 class ArrayProgressConfiguration
   def self.terminal_width
-    HighLine::SystemExtensions.terminal_size[1]
+    HighLine::SystemExtensions.terminal_size[0]
   end
 
   def self.item_width
