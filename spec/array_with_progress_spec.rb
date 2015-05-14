@@ -24,6 +24,16 @@ describe ArrayWithProgress do
 END
   end
 
+  it 'should convert newlines to spaces' do
+    expect do
+      ["Multiline\nstring"].each_with_progress do |item|
+        :ok
+      end
+    end.to output(<<END).to_stdout
+\r[  0.0%] Multiline string                      \r[  0.0%] Multiline string                       [ Success ]
+END
+  end
+
   it 'should work on multiple item string array' do
     expect do
       ['Foo', 'Bar', 'Zomb'].each_with_progress do |item|

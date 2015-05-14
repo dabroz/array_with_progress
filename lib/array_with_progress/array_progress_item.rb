@@ -65,7 +65,12 @@ class ArrayProgressItem
 
   def display_name
     width = ArrayProgressConfiguration.item_width
-    (description + ' ' + self.name + ' ' + self.extra_name).strip[0..width-1].ljust(width, ' ')
+    ret = (description + ' ' + self.name + ' ' + self.extra_name)
+    ret = ret.gsub("\n", ' ')
+    ret = ret.strip
+    ret = ret[0..width-1]
+    ret = ret.ljust(width, ' ')
+    ret
   end
 
   def reprint!
